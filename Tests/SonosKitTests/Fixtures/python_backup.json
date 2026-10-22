@@ -1,0 +1,131 @@
+{
+  "created": "2026-10-19T21:02:19",
+  "label": "baslangic",
+  "household": {
+    "devices": {
+      "RINCON_0000AA00000101400": {
+        "uuid": "RINCON_0000AA00000101400",
+        "room": "Living Room",
+        "ip": "10.0.0.6",
+        "model": "Playbar",
+        "software": "17.2.7",
+        "invisible": false,
+        "is_satellite": false,
+        "role": "soundbar",
+        "channel": "LF,RF",
+        "bonded_to": ""
+      },
+      "RINCON_0000AA00000601400": {
+        "uuid": "RINCON_0000AA00000601400",
+        "room": "Living Room",
+        "ip": "10.0.0.62",
+        "model": "Play:3",
+        "software": "17.2.7",
+        "invisible": true,
+        "is_satellite": true,
+        "role": "surround_right",
+        "channel": "RR",
+        "bonded_to": "RINCON_0000AA00000101400"
+      },
+      "RINCON_0000AA00000501400": {
+        "uuid": "RINCON_0000AA00000501400",
+        "room": "Living Room",
+        "ip": "10.0.0.61",
+        "model": "Play:3",
+        "software": "17.2.7",
+        "invisible": true,
+        "is_satellite": true,
+        "role": "surround_left",
+        "channel": "LR",
+        "bonded_to": "RINCON_0000AA00000101400"
+      },
+      "RINCON_0000AA00000401400": {
+        "uuid": "RINCON_0000AA00000401400",
+        "room": "Living Room",
+        "ip": "10.0.0.12",
+        "model": "Sub",
+        "software": "17.2.7",
+        "invisible": true,
+        "is_satellite": true,
+        "role": "sub",
+        "channel": "SW",
+        "bonded_to": "RINCON_0000AA00000101400"
+      },
+      "RINCON_0000AA00000301400": {
+        "uuid": "RINCON_0000AA00000301400",
+        "room": "TV Room",
+        "ip": "10.0.0.18",
+        "model": "Play:1",
+        "software": "17.2.7",
+        "invisible": true,
+        "is_satellite": false,
+        "role": "pair_right",
+        "channel": "RF,RF",
+        "bonded_to": "RINCON_0000AA00000201400"
+      },
+      "RINCON_0000AA00000201400": {
+        "uuid": "RINCON_0000AA00000201400",
+        "room": "TV Room",
+        "ip": "10.0.0.92",
+        "model": "Play:1",
+        "software": "17.2.7",
+        "invisible": false,
+        "is_satellite": false,
+        "role": "pair_left",
+        "channel": "LF,LF",
+        "bonded_to": ""
+      }
+    },
+    "rooms": {
+      "RINCON_0000AA00000101400": {
+        "name": "Living Room",
+        "primary": "RINCON_0000AA00000101400",
+        "devices": [
+          "RINCON_0000AA00000101400",
+          "RINCON_0000AA00000401400",
+          "RINCON_0000AA00000501400",
+          "RINCON_0000AA00000601400"
+        ],
+        "kind": "home_theater",
+        "ht_map": {
+          "RINCON_0000AA00000101400": "LF,RF",
+          "RINCON_0000AA00000401400": "SW",
+          "RINCON_0000AA00000501400": "LR",
+          "RINCON_0000AA00000601400": "RR"
+        },
+        "pair_map": {}
+      },
+      "RINCON_0000AA00000201400": {
+        "name": "TV Room",
+        "primary": "RINCON_0000AA00000201400",
+        "devices": [
+          "RINCON_0000AA00000201400",
+          "RINCON_0000AA00000301400"
+        ],
+        "kind": "stereo_pair",
+        "ht_map": {},
+        "pair_map": {
+          "RINCON_0000AA00000201400": "LF,LF",
+          "RINCON_0000AA00000301400": "RF,RF"
+        }
+      }
+    },
+    "groups": [
+      {
+        "id": "RINCON_0000AA00000101400:3014383298",
+        "coordinator": "RINCON_0000AA00000101400",
+        "rooms": [
+          "RINCON_0000AA00000101400"
+        ]
+      },
+      {
+        "id": "RINCON_0000AA00000201400:3016103261",
+        "coordinator": "RINCON_0000AA00000201400",
+        "rooms": [
+          "RINCON_0000AA00000201400"
+        ]
+      }
+    ]
+  },
+  "zone_group_state": "<ZoneGroupState><ZoneGroups><ZoneGroup Coordinator=\"RINCON_0000AA00000101400\" ID=\"RINCON_0000AA00000101400:3014383298\"><ZoneGroupMember UUID=\"RINCON_0000AA00000101400\" Location=\"http://10.0.0.6:1400/xml/device_description.xml\" ZoneName=\"Living Room\" Icon=\"x-rincon-roomicon:living\" Configuration=\"1\" SoftwareVersion=\"86.10-81100\" SWGen=\"2\" MinCompatibleVersion=\"85.0-00000\" LegacyCompatibleVersion=\"58.0-00000\" HTSatChanMapSet=\"RINCON_0000AA00000101400:LF,RF;RINCON_0000AA00000401400:SW;RINCON_0000AA00000501400:LR;RINCON_0000AA00000601400:RR\" ActiveZoneID=\"00000000-0000-4000-8000-000000000001\" BootSeq=\"78\" TVConfigurationError=\"0\" HdmiCecAvailable=\"0\" WirelessMode=\"1\" ConnectionType=\"5\" ChannelFreq=\"2462\" BehindWifiExtender=\"0\" WifiEnabled=\"1\" EthLink=\"0\" Orientation=\"0\" RoomCalibrationState=\"1\" SecureRegState=\"3\" VoiceConfigState=\"0\" MicEnabled=\"0\" HeadphoneSwapActive=\"0\" AirPlayEnabled=\"0\" IdleState=\"0\" MoreInfo=\"\" SSLPort=\"1443\" HHSSLPort=\"1843\"><Satellite UUID=\"RINCON_0000AA00000601400\" Location=\"http://10.0.0.62:1400/xml/device_description.xml\" ZoneName=\"Living Room\" Icon=\"x-rincon-roomicon:living\" Configuration=\"1\" Invisible=\"1\" SoftwareVersion=\"86.10-81100\" SWGen=\"2\" MinCompatibleVersion=\"85.0-00000\" LegacyCompatibleVersion=\"58.0-00000\" HTSatChanMapSet=\"RINCON_0000AA00000101400:LF,RF;RINCON_0000AA00000601400:RR\" ActiveZoneID=\"00000000-0000-4000-8000-000000000001\" BootSeq=\"7\" TVConfigurationError=\"0\" HdmiCecAvailable=\"0\" WirelessMode=\"2\" ConnectionType=\"6\" ChannelFreq=\"5200\" BehindWifiExtender=\"0\" WifiEnabled=\"1\" EthLink=\"0\" Orientation=\"3\" RoomCalibrationState=\"5\" SecureRegState=\"3\" VoiceConfigState=\"0\" MicEnabled=\"0\" HeadphoneSwapActive=\"0\" AirPlayEnabled=\"0\" IdleState=\"0\" MoreInfo=\"\" SSLPort=\"1443\" HHSSLPort=\"1843\"/><Satellite UUID=\"RINCON_0000AA00000501400\" Location=\"http://10.0.0.61:1400/xml/device_description.xml\" ZoneName=\"Living Room\" Icon=\"x-rincon-roomicon:living\" Configuration=\"1\" Invisible=\"1\" SoftwareVersion=\"86.10-81100\" SWGen=\"2\" MinCompatibleVersion=\"85.0-00000\" LegacyCompatibleVersion=\"58.0-00000\" HTSatChanMapSet=\"RINCON_0000AA00000101400:LF,RF;RINCON_0000AA00000501400:LR\" ActiveZoneID=\"00000000-0000-4000-8000-000000000001\" BootSeq=\"30\" TVConfigurationError=\"0\" HdmiCecAvailable=\"0\" WirelessMode=\"2\" ConnectionType=\"6\" ChannelFreq=\"5200\" BehindWifiExtender=\"0\" WifiEnabled=\"1\" EthLink=\"0\" Orientation=\"3\" RoomCalibrationState=\"5\" SecureRegState=\"3\" VoiceConfigState=\"0\" MicEnabled=\"0\" HeadphoneSwapActive=\"0\" AirPlayEnabled=\"0\" IdleState=\"0\" MoreInfo=\"\" SSLPort=\"1443\" HHSSLPort=\"1843\"/><Satellite UUID=\"RINCON_0000AA00000401400\" Location=\"http://10.0.0.12:1400/xml/device_description.xml\" ZoneName=\"Living Room\" Icon=\"x-rincon-roomicon:living\" Configuration=\"1\" Invisible=\"1\" SoftwareVersion=\"86.10-81100\" SWGen=\"2\" MinCompatibleVersion=\"85.0-00000\" LegacyCompatibleVersion=\"58.0-00000\" HTSatChanMapSet=\"RINCON_0000AA00000101400:LF,RF;RINCON_0000AA00000401400:SW\" ActiveZoneID=\"00000000-0000-4000-8000-000000000001\" BootSeq=\"55\" TVConfigurationError=\"0\" HdmiCecAvailable=\"0\" WirelessMode=\"2\" ConnectionType=\"6\" ChannelFreq=\"5200\" BehindWifiExtender=\"0\" WifiEnabled=\"1\" EthLink=\"0\" Orientation=\"0\" RoomCalibrationState=\"5\" SecureRegState=\"3\" VoiceConfigState=\"0\" MicEnabled=\"0\" HeadphoneSwapActive=\"0\" AirPlayEnabled=\"0\" IdleState=\"0\" MoreInfo=\"\" SSLPort=\"1443\" HHSSLPort=\"1843\"/></ZoneGroupMember></ZoneGroup><ZoneGroup Coordinator=\"RINCON_0000AA00000201400\" ID=\"RINCON_0000AA00000201400:3016103261\"><ZoneGroupMember UUID=\"RINCON_0000AA00000301400\" Location=\"http://10.0.0.18:1400/xml/device_description.xml\" ZoneName=\"TV Room\" Icon=\"\" Configuration=\"1\" Invisible=\"1\" SoftwareVersion=\"86.10-81100\" SWGen=\"2\" MinCompatibleVersion=\"85.0-00000\" LegacyCompatibleVersion=\"58.0-00000\" ChannelMapSet=\"RINCON_0000AA00000201400:LF,LF;RINCON_0000AA00000301400:RF,RF\" ActiveZoneID=\"00000000-0000-4000-8000-000000000002\" BootSeq=\"45\" TVConfigurationError=\"0\" HdmiCecAvailable=\"0\" WirelessMode=\"1\" ConnectionType=\"5\" ChannelFreq=\"2462\" BehindWifiExtender=\"0\" WifiEnabled=\"1\" EthLink=\"0\" Orientation=\"0\" RoomCalibrationState=\"5\" SecureRegState=\"3\" VoiceConfigState=\"0\" MicEnabled=\"0\" HeadphoneSwapActive=\"0\" AirPlayEnabled=\"0\" IdleState=\"1\" MoreInfo=\"\" SSLPort=\"1443\" HHSSLPort=\"1843\"/><ZoneGroupMember UUID=\"RINCON_0000AA00000201400\" Location=\"http://10.0.0.92:1400/xml/device_description.xml\" ZoneName=\"TV Room\" Icon=\"\" Configuration=\"1\" SoftwareVersion=\"86.10-81100\" SWGen=\"2\" MinCompatibleVersion=\"85.0-00000\" LegacyCompatibleVersion=\"58.0-00000\" ChannelMapSet=\"RINCON_0000AA00000201400:LF,LF;RINCON_0000AA00000301400:RF,RF\" ActiveZoneID=\"00000000-0000-4000-8000-000000000002\" BootSeq=\"3\" TVConfigurationError=\"0\" HdmiCecAvailable=\"0\" WirelessMode=\"1\" ConnectionType=\"5\" ChannelFreq=\"2462\" BehindWifiExtender=\"0\" WifiEnabled=\"1\" EthLink=\"0\" Orientation=\"0\" RoomCalibrationState=\"1\" SecureRegState=\"3\" VoiceConfigState=\"0\" MicEnabled=\"0\" HeadphoneSwapActive=\"0\" AirPlayEnabled=\"0\" IdleState=\"1\" MoreInfo=\"\" SSLPort=\"1443\" HHSSLPort=\"1843\"/></ZoneGroup></ZoneGroups><VanishedDevices></VanishedDevices></ZoneGroupState>"
+}

@@ -1,0 +1,15 @@
+OpenSonos is MIT licensed (see LICENSE), except for the parts below.
+
+Sources/CShine
+  The shine fixed-point MP3 encoder, https://github.com/toots/shine
+  GNU Lesser General Public License v2 — see Sources/CShine/COPYING.
+  Vendored unmodified from shine's src/lib. It is built as its own target, so it can be
+  replaced or relinked independently of the rest of the package.
+
+Sources/SonosKit/AirPlayCrypto.swift
+  Contains the RSA private key Apple shipped in the AirPort Express, published in 2011
+  and used by open AirPlay 1 receivers (shairport, shairplay, AirConnect) for
+  interoperability.
+
+Not affiliated with or endorsed by Sonos, Inc. or Apple Inc. Sonos and AirPlay are
+trademarks of their respective owners.
